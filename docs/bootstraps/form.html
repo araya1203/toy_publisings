@@ -9,26 +9,32 @@
        <!-- <link rel="stylesheet" href="../css/commons.css"> -->
     </head>
  <body>
-     <h2>회원가입</h2>
-      <form action="./menu.html">
-        <div>
-        First Name : <input type="text" name="first" value=""> 
-        </div>
-        <div>
-        Second Name : <input type="text" name="second" value="">
-        </div>
-        <div>
-        E-mail : <input type="email" name="myemail" value=""> 
-        </div>
-        <div>
-        Password : <input type="password" name="mypassword">
-        </div>
-        
-        <div>
-        <input type="submit">
-        </div>
-      
-      </form>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <h1 class="text-center mb-4">Sign Up</h1>
+        <form action="./menu.html">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+          </div>
+          <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password">
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
      
  </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
